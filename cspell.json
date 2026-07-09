@@ -1,0 +1,20 @@
+{
+  "version": "0.2",
+  "words": [
+    "graphrag",
+    "pyproject",
+    "venv",
+    "Ollama",
+    "litellm",
+    "qwen",
+    "nomic",
+    "BerriAI",
+    "lancedb",
+    "tiktoken",
+    "typer",
+    "pydantic",
+    "pyyaml",
+    "pytest",
+    "chdir"
+  ]
+}

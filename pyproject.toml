@@ -1,0 +1,25 @@
+[project]
+name = "microsoft-graphrag-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "graphrag>=3.1.0",
+    "lancedb>=0.24.3",
+    "litellm>=1.86.2",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    "pyyaml>=6.0.3",
+    "tiktoken>=0.13.0",
+    "typer>=0.26.8",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,26 @@
+input:
+  base_dir: ../input
+
+completion_model:
+  model_provider: openai
+  model: gpt-4.1
+  auth_method: api_key
+  api_key: ${GRAPHRAG_API_KEY}
+
+embedding_model:
+  model_provider: openai
+  model: text-embedding-3-large
+  auth_method: api_key
+  api_key: ${GRAPHRAG_API_KEY}
+
+chunking:
+  size: 1200
+  overlap: 100
+  encoding_model: o200k_base
+
+vector_store:
+  db_uri: output/lancedb
+  table_name: chunks
+
+retrieval:
+  top_k: 10

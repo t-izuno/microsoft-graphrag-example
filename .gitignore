@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+.env
+graphrag/.env
+graphrag/output/
+graphrag/cache/
+graphrag/logs/
+
+vector_rag/output/
+
+evaluation/results/
+
+input/*
+!input/.gitkeep
