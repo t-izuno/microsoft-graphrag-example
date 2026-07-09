@@ -56,11 +56,26 @@ cp graphrag/.env.example graphrag/.env
 Ollamaなどキー認証が不要なローカルモデルを使う場合の扱いは
 [Ollama設定手順](./ollama-setup.md)を参照してください。
 
-## 3. 入力データを配置する
+## 3. 入力データを準備する
 
-リポジトリ直下の`input/`ディレクトリ（GraphRAGとVector RAGで共有）に
-解析対象のテキストファイルを配置します。すでに`input/book.txt`が
-含まれている場合は、そのまま動作確認に使えます。
+リポジトリ直下の`input/`ディレクトリ（GraphRAGとVector RAGで共有）は
+`.gitignore`で中身が除外されており（`input/.gitkeep`のみ追跡対象）、
+クローンした直後は空です。解析したいテキストファイル（`.txt`）を
+`input/`配下に配置してください。
+
+公式Getting Startedと同じサンプルを試したい場合は、Project
+Gutenbergで公開されている「A Christmas Carol」（Charles Dickens著、
+著作権切れ）を使えます。本リポジトリの動作確認も、この
+テキストを`input/book.txt`として配置して行っています
+（実際のファイル冒頭を確認済み）。`input/`自体は`.gitignore`対象
+のため、クローンしただけでは含まれません。
+
+```bash
+curl https://www.gutenberg.org/cache/epub/24022/pg24022.txt -o input/book.txt
+```
+
+手順5のクエリ例（「このリポジトリのテーマは何ですか」）は、
+配置したテキストの内容に合わせて適宜書き換えてください。
 
 ## 4. インデックスを作成する
 

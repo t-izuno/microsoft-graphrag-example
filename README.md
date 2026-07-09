@@ -1,6 +1,8 @@
 # Microsoft GraphRAG Example
 
-Microsoftが提唱するGraphRAGを使って高度なRAG環境を構築し、その
+Microsoftが提唱する
+[GraphRAG](https://microsoft.github.io/graphrag/)を使って高度な
+RAG環境を構築し、その
 「高度さ」が従来型のVector RAGと比べて実際にどれだけの違いを
 生むのかを検証するリポジトリ。
 
@@ -42,3 +44,8 @@ LLMをOllamaに切り替える場合は
 ```bash
 uv run pytest
 ```
+
+## 参考資料
+
+- [GraphRAG - 公式ドキュメント](https://microsoft.github.io/graphrag/)
+- [GraphRAG (microsoft/graphrag) - GitHub](https://github.com/microsoft/graphrag)
